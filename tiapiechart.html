@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .pie-chart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+ 
+            background: conic-gradient(
+                pink 0% 30%, 
+                red 30% 50%, 
+                yellow 50% 70%, 
+                orange 70% 100%
+            ); 
+        }
+    </style>
+</head>
+<body>
+    <div class="pie-chart"></div>
+<a href="https://urldefense.com/v3/__https://www.w3schools.com/js/js_graphics_chartjs.asp__;!!MjXRb4uW6x5k!CwCptV2aEbABOHd9xxrYDzT2pMJhL5gLBOd0WmFvrNxmPx3ksJNKp3BFGGCM38ZOBX006mq6dbpqpn8AnBrdm9k$"> click to learn more about piecharts</a>
+</body>
+</html>
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<canvas id="myPieChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = ["Books", "Groceries", "Movies"];
+const yValues = [10, 75, 15];
+const barColors = ["red", "green","blue"];
+
+new Chart("myPieChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Tia's expense chart"
+    }
+  }
+});   
+
+</script>
