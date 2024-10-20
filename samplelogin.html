@@ -47,7 +47,11 @@ var checklogin;
         var password = document.getElementById("psw").value;
         
         //check to see if the password and username match
-        if( (username == "chris" && password == "gewont") || (username == "tia" && password == "johnson") || (username == "jacob" && password == "ang") || (username == "noumaan" && password == "mohammed")){
+	if (username == "tia" && password == "johnson") 
+	{
+		alert("Welcome Tia");
+		window.open("tiapage.html", "_blank");
+	} else if( (username == "chris" && password == "gewont") || (username == "jacob" && password == "ang") || (username == "noumaan" && password == "mohammed")){
           checklogin= true;
           alert("Login successful");
         }else{ // username or password do not match
