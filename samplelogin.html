@@ -51,7 +51,11 @@ var checklogin;
 	{
 		alert("Welcome Tia");
 		window.open("tiapage.html", "_blank");
-	} else if( (username == "chris" && password == "gewont") || (username == "jacob" && password == "ang") || (username == "noumaan" && password == "mohammed")){
+	} else if (username == "jacob" && password == "ang")
+	{
+		alert("Welcome Jacob");
+		window.open("Jacobpage.html", "_blank");
+	} else if( (username == "chris" && password == "gewont")  || (username == "noumaan" && password == "mohammed")){
           checklogin= true;
           alert("Login successful");
         }else{ // username or password do not match
